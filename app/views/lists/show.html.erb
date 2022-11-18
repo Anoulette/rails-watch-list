@@ -4,9 +4,11 @@
     <li>Commentaire : <%= bookmark.comment %></li>
     <li>Titre du film : <%= bookmark.movie.title %></li>
     <li>aperçu du film : <%= bookmark.movie.overview %></li>
-    <li>url d'affiche du film : <%= bookmark.movie.poster_url %></li>
+    <li>url d'affiche du film : <%= image_tag bookmark.movie.poster_url, width: 100 %></li>
     <%= link_to "Supprimer bookmark", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
   <% end %>
+
+<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 
 <%= link_to "Retour à toutes les listes", lists_path %>
 
