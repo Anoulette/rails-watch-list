@@ -11,12 +11,12 @@ Movie.destroy_all
 
 puts "Creating movies..."
 
-Wonder_woman = { title: "Wonder Woman 1984", overview: "Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s", poster_url: "https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg", rating: 6.9 }
-Shawshank = { title: "The Shawshank Redemption", overview: "Framed in the 1940s for double murder, upstanding banker Andy Dufresne begins a new life at the Shawshank prison", poster_url: "https://image.tmdb.org/t/p/original/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg", rating: 8.7 }
-Titanic = { title: "Titanic", overview: "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic.", poster_url: "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg", rating: 7.9 }
-Ocean = { title: "Ocean's Eight", overview: "Debbie Ocean, a criminal mastermind, gathers a crew of female thieves to pull off the heist of the century.", poster_url: "https://image.tmdb.org/t/p/original/MvYpKlpFukTivnlBhizGbkAe3v.jpg", rating: 7.0 }
+Juno = { title: "Juno", overview: "Juno McGuff, 16 ans, est une jeune fille qui n'a pas la langue dans sa poche mais qui, sous ses airs de dure, se cherche comme toutes les adolescentes de son âge.", poster_url: "url à chercher", rating: 6.9 }
+Home_Alone = { title: "Home_Alone", overview: "In the confusion and rush to get to the airport, Kevin is accidentally left behind. Kevin wakes to find the house empty.", poster_url: "url à chercher", rating: 8.7 }
+A_Star_is_born = { title: "A_Star_is_born", overview: "Star de country sur le déclin, Jackson Maine (Bradley Cooper) découvre Ally Campana (Lady Gaga), une jeune chanteuse très prometteuse. ", poster_url: "url à chercher", rating: 7.9 }
+Jumanji = { title: "Jumanji", overview: "Lors d'une partie de Jumanji, un jeu très ancien, le jeune Alan est propulsé sous les yeux de son amie d'enfance, Sarah, dans un étrange pays.", poster_url: "url à chercher", rating: 7.0 }
 
-[Wonder_woman, Shawshank, Titanic, Ocean].each do |attributes|
+[Juno, Home_Alone, A_Star_is_born, Jumanji].each do |attributes|
   movie = Movie.create!(attributes)
   puts "Created #{movie.title}"
 end
